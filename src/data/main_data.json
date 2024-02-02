@@ -1,0 +1,142 @@
+[
+  {
+    "id": 0,
+    "name": "Hamlet",
+    "category": "Theater",
+    "author": "William Shakespeare",
+    "location": "İzmir",
+    "locationDetail": "Bornova Kültür Merkezi Bozkurt Kuruç Sahnesi",
+    "date": "28/02/2024",
+    "startTime" : "19:00",
+    "finishTime" : "23:00",
+    "description": "Var olmak mı, yok olmak mı, bütün sorun bu!",
+    "image": "https://l24.im/t1SyKUN",
+    "image2": "https://miro.medium.com/v2/resize:fit:260/1*ml5XMWy7ZmFSv1NBMMUpig.jpeg",
+    "image3": "https://metapolitik.net/wp-content/uploads/2020/12/hamlet-1.jpg"
+  },
+
+  {
+    "id": 1,
+    "name": "Münasebetsiz",
+    "category": "Theater",
+    "author": "Francis Veber",
+    "location": "İzmir",
+    "locationDetail": "Konak Sahnesi",
+    "date": "27/02/2024",
+    "startTime" : "18:00",
+    "finishTime" : "22:00",
+    "description": "Aşk acısı yaşayan, temiz kalpli bir fotoğrafçı…",
+    "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/0647a888e368461bbcda569e7f3132c5.jpg",
+    "image2": "https://firsat.me/img/big1024/62509_64f069867689c_1600x1066.webp",
+    "image3": "https://images.izmirburaya.com/Images/Deals/1200x1200/86cc4ffa-c2ce-4482-ab05-7982e8966b5a.jpg"
+  },
+
+  {
+    "id": 2,
+    "name": "Fareler Ve İnsanlar",
+    "category": "Theater",
+    "author": "John Steinback",
+    "location": "İzmir",
+    "locationDetail": "Bornova Kültür Merkezi Bozkurt Kuruç Sahnesi",
+    "date": "06/02/2024",
+    "startTime" : "16:00",
+    "finishTime" : "18:00",
+    "description": " birbirlerine zıt iki arkadaşın muhteşem hikayesini anlatıyor.",
+    "image": "https://www.devtiyatro.gov.tr/uploads/7000_10000_2931_42bfa612-8957-4a6d-8c46-60176af16fa9.jpeg",
+    "image2": "https://www.devtiyatro.gov.tr/uploads/7000_10000_2931_ed5a87ff-3e4b-4b07-b679-e63266db946e.jpeg",
+    "image3": "https://www.devtiyatro.gov.tr/uploads/7000_10000_2931_ef6420a2-8564-44dc-b6a8-dbe773562c42.jpeg"
+  },
+
+  {
+    "id": 3,
+    "name": "Dedublüman",
+    "category": "Concert",
+    "author": "Dedublüman",
+    "location": "İzmir",
+    "locationDetail": "Hayal Kahvesi",
+    "date": "31/01/2024",
+    "startTime" : "19:00",
+    "finishTime" : "20:00",
+    "description": "Gamzedeyim deva bulmam şarkısıyla da tanıdığımız Dedublüman Konseri",
+    "image": "https://cdn.bubilet.com.tr/files/Etkinlik/dedubluman-konseri-41316.jpg",
+    "image2": "https://i.ibb.co/74s14Kw/dedubluman.jpg",
+    "image3": "https://cdn.bubilet.com.tr/files/Etkinlik/dedubluman-konseri-24738.jpg"
+  },
+
+  {
+    "id": 4,
+    "name": "İlyas Yalçıntaş",
+    "category": "Concert",
+    "author": "İlyas Yalçıntaş",
+    "location": "İzmir",
+    "locationDetail": "Hayal Kahvesi",
+    "date": "01/02/2024",
+    "startTime" : "21:00",
+    "finishTime" : "23:00",
+    "description": "Gel be gökyüzüm şarkısıyla da tanıdığımız İlyas Yalçıntaş Konseri",
+    "image": "https://cdn.bubilet.com.tr/files/Etkinlik/ilyas-yalcintas-konseri-14357.JPG",
+    "image2": "https://www.biletix.com/static/images/live/event/eventimages/0MFO7_ilyas.jpg",
+    "image3": "https://www.bursa.com/files/uploads/news/default/3a/3a190d5a-6c09-4003-8452-f506ddaef26e-450346.jpg"
+  },
+
+  {
+    "id": 5,
+    "name": "Cem Adrian",
+    "category": "Concert",
+    "author": "Cem Adrian",
+    "location": "İzmir",
+    "locationDetail": "Ooze Venue",
+    "date": "10/02/2024",
+    "startTime" : "23:00",
+    "finishTime" : "00:00",
+    "description": "Duygusal şarkılarıyla ruhumuza dokunan, hislerimize tercüman olan Cem Adrian sevenleriyle hız kesmeden buluşmaya devam ediyor.",
+    "image": "https://cdn.bubilet.com.tr/files/Etkinlik/cem-adrian-konseri-45974.JPG",
+    "image2": "https://i.scdn.co/image/5f96a0d4d30be55ae4037a761c7e983ff4d72c14",
+    "image3": "https://image.milimaj.com/i/milliyet/75/869x477/629dd3b786b24519b8551ed0.jpg"
+  },
+
+  {
+    "id": 6,
+    "name": "Laure Daviron Sergisi",
+    "category": "Art",
+    "author": "Laure Daviron Sergisi",
+    "location": "İzmir",
+    "locationDetail": "Fransız Kültür Merkezi",
+    "startTime": "30/01/2024",
+    "finishTime" : "15/02/2024",
+    "description" : "Ücretsiz bir sergidir",
+    "image" : "https://www.izmir.art/500/600/img/uploads/image-c5d848759975aa63f4c02246380a9faad1611474.png",
+    "image2" : "https://www.artistescontemporains.org/ac/wp-content/uploads/avatars/7222/57f799770bf36-bpfull.jpg",
+    "image3" : "https://img.lamontagne.fr/dONHwHMr4xBJSnu0pPNEgxW-_2xwZ9QMzXC9vAje06A/fit/657/438/sm/0/bG9jYWw6Ly8vMDAvMDAvMDIvNTgvOTUvMjAwMDAwMjU4OTU3Ng.jpg"
+  },
+
+  {
+    "id": 7,
+    "name": "Mitoloji Ve Kadın Resim Sergisi",
+    "category": "Art",
+    "author": "",
+    "location": "İzmir",
+    "locationDetail": "İzmir Arkeoloji Müzesi",
+    "startTime": "15/01/2024",
+    "finishTime" : "15/02/2024",
+    "description" : "Ücretsiz bir sergidir",
+    "image" : "https://www.izmir.art/300/300/img/uploads/image-ec733454e0d137fd199081bda1ad50a85c342132.png",
+    "image2" : "https://www.magmadergisi.com/resimler/mitoloji-ve-kadin.jpg",
+    "image3" : "https://www.magmadergisi.com/resimler/yazilar/mitoloji-ve-kadin-rc2ogave.jpg"
+  },
+
+  {
+    "id": 8,
+    "name": "Meltaround",
+    "category": "Art",
+    "author": "Commune Art Space",
+    "location": "İzmir",
+    "locationDetail": "Commune Art Space",
+    "startTime": "16/12/2023",
+    "finishTime" : "10/02/2024",
+    "description" : "Muhteşem bir sergi sizleri beklemektedir...",
+    "image" : "https://www.izmir.art/imgServ/img/uploads/image-8c2e4d492cee260900fcc1b2b31ce41dc784b413.png",
+    "image2" : "https://www.izmir.art/600/375/img/uploads/image-f86b2fdbe1e6a0f9ad41c560c94dca739da08778.png",
+    "image3" : "https://izmir.art/600/375/img/uploads/image-c728339d0ee5d1ccf33db0f25109422313de39eb.png"
+  }
+]
