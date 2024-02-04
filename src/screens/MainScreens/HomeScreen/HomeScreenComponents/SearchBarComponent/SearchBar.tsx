@@ -8,7 +8,7 @@ const SearchBar = (props : any) => {
       
       <TextInput
       placeholder='Search...' 
-      placeholderTextColor= 'white'
+      placeholderTextColor= 'black'
       onChangeText={props.onSearch}
       style={styles.text}
       />

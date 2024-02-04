@@ -3,14 +3,16 @@ import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
     container : {
-        backgroundColor : 'black',
+        backgroundColor : 'white',
         margin : 8,
         padding : 2,
-        borderRadius : 5,
+        borderWidth:1,
+        borderRadius : 10,
+        borderColor : 'black'
     },
     text: {
-        color: 'white',
+        color: 'black',
         fontWeight: 'normal',
-        fontSize : 18
+        fontSize : 18,
     }
 })

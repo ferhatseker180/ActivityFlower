@@ -1,66 +1,70 @@
-import { StyleSheet } from "react-native";
+import { Dimensions, StyleSheet } from "react-native";
 
 export default StyleSheet.create({
   
-    container: {
-        padding : 10,
-        flexDirection : 'row',
-
-    },
-
-    imageStyle : {
-        width : 100,
-        height : 100,
-        borderRadius : 50,
-    },
-
-    innerContainerStyle : {
-       padding : 10,
-       flex : 1,
-       justifyContent : 'center',
-
-    },
-
-    titleStyle : {
-        fontWeight : 'bold',
-        color : 'black',
-        fontSize : 28,
-    },
-
-    infoContainerStyle : {
+    mainContainer : {
         flex : 1,
-        flexDirection : 'row',
-        alignItems : 'center',
-    },
-
-    artistTextStyle : {
-        fontSize : 16,
-        color : 'black',
-    },
-
-    yearTextStyle: {
-        marginLeft : 6,
-        color : 'grey',
-        fontWeight : 'bold',
-        fontSize : 12,
-       
-    },
-
-    soldOutContainer : {
+        backgroundColor: 'azure',
+        margin : 8,
         borderWidth : 1,
-        borderColor : 'red',
-        padding : 10,
-        borderRadius : 5,
+        borderRadius : 6,
+        padding : 0,
+        borderColor : 'azure',
+        alignContent : 'center',
         
     },
 
-    soldOutTitleStyle : {
-        color : 'red',
-        fontSize : 12,
+    imageStyle : {
+        height : Dimensions.get('window').height / 5,
+        borderWidth : 1,
+        borderRadius : 10,
+        resizeMode : 'cover',
+        borderColor:'white'
     },
 
-    mergeContainer : {
-        flexDirection : 'row',
+    nameStyle : {
+        fontSize : 18,
+        fontWeight : 'bold',
+        textAlign : 'center',
+        margin : 2,
+        color : 'black',
+    },
+
+    categoryStyle : {
+        fontSize : 16,
+        fontWeight : '400',
+        textAlign : 'center',
+        margin : 2,
+        color : 'black',
+    },
+
+    dateStyle : {
+        fontSize : 16,
+        fontWeight : '400',
+        textAlign : 'center',
+        margin : 2,
+        color : 'black',
+    },
+
+    goDetailPressable:{
+        backgroundColor: 'brown',
+        borderRadius: 2,
+        alignItems : 'center',
+        margin:5
+    },
+    buttonTextStyle : {
+        color : 'white',
+        textAlign:'center',
+        fontSize: 18,
+    },
+
+    detailButtonStyle : {
+        backgroundColor: 'brown',
+        height:40,
+        borderRadius: 10,
+        alignItems: 'center',
+        justifyContent: 'center',
+    
     },
 
 })
