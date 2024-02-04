@@ -1,32 +1,19 @@
-import {View, Text, Image, TouchableOpacity} from 'react-native';
-import React from 'react';
-import styles from './MainCardStyle';
+import { View, Text, Image, TouchableOpacity } from 'react-native'
+import React from 'react'
 import Icon from 'react-native-vector-icons/FontAwesome5';
+import styles from './ConcertCardStyle'
 
-const MainCard = (props: any) => {
-
-
+const ConcertCard = (props : any) => {
   return (
     <View style={styles.mainContainer}>
  
       <Image style={styles.imageStyle} source={{uri: props.activity.image}} />
 
       <View style={{flex: 1, flexDirection: 'row', justifyContent: 'center'}}>
-        {
-          props.activity.category === 'Theater' && (
-          <Icon name='theater-masks' size={20} />
-          )
-        }
-
+       
         {
            props.activity.category === 'Concert' && (
-            <Icon name='music' size={20}/>
-            )
-        }
-
-        {
-           props.activity.category === 'Art' && (
-            <Icon name='paint-brush' size={20} />
+            <Icon name='music' size={20} />
             )
         }
         <Text style={styles.nameStyle}> {props.activity.name} </Text>  
@@ -38,7 +25,7 @@ const MainCard = (props: any) => {
         </TouchableOpacity>
       
     </View>
-  );
-};
+  )
+}
 
-export default MainCard;
+export default ConcertCard;

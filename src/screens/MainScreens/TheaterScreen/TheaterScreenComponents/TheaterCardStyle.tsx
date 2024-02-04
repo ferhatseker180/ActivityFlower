@@ -1,7 +1,7 @@
 import { Dimensions, StyleSheet } from "react-native";
 
 export default StyleSheet.create({
-  
+    
     mainContainer : {
         flex : 1,
         backgroundColor: 'azure',
@@ -45,5 +45,4 @@ export default StyleSheet.create({
         justifyContent: 'center',
     
     },
-
 })

@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import SearchBar from './HomeScreenComponents/SearchBarComponent'
 import MainCard from './HomeScreenComponents/MainCardComponent'
 import main_data from '../../../data/main_data.json'
-import BannerCard from './HomeScreenComponents/BannerCardComponent/BannerCard'
+
 const HomeScreen = () => {
 
   const renderActivity = ({item} : any) => <MainCard activity={item} />

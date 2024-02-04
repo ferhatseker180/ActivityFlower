@@ -1,11 +1,50 @@
-import { View, Text } from 'react-native'
-import React from 'react'
-
+import { View, Text, SafeAreaView, FlatList } from 'react-native'
+import React, { useState } from 'react'
+import ArtScreenCard from './ArtScreenComponents/ArtScreenCard'
+import main_data from '../../../data/main_data.json'
+import SearchBar from '../HomeScreen/HomeScreenComponents/SearchBarComponent'
 const ArtScreen = () => {
+
+  const renderActivity = ({item} : any) => <ArtScreenCard activity={item} />
+  const artData = main_data.filter(item => item.category === 'Art');
+
+ 
+  
+  const renderSeperator = () => <View style = {{borderWidth:1,borderColor:'#e0e0e0'}} />
+
+  const handleSearch = (text : any) => {
+    const filteredList = artData.filter(data => {
+      const searchedText = text.toLowerCase();
+      const currentName = data.name.toLowerCase();
+
+      const currentCategory = data.category.toLowerCase();
+
+     return currentName.indexOf(searchedText) > - 1 || currentCategory.indexOf(searchedText)>-1;
+    });
+
+    setList(filteredList);
+  }
+
+  const [list,setList] = useState(main_data);
+
   return (
-    <View>
-      <Text>ArtScreen</Text>
-    </View>
+    
+    <SafeAreaView style={{flex:1}}>
+     
+     <SearchBar onSearch={handleSearch} />
+
+      
+     <FlatList
+
+     keyExtractor={(item) => item.id.toString()}
+     renderItem={renderActivity}
+     data={artData}
+     numColumns={2}
+     ItemSeparatorComponent={renderSeperator}
+    
+     />
+
+    </SafeAreaView>
   )
 }
 
