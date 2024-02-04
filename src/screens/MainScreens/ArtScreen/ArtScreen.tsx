@@ -1,11 +1,13 @@
-import { View, Text, SafeAreaView, FlatList } from 'react-native'
+import { View, Text, SafeAreaView, FlatList, Button } from 'react-native'
 import React, { useState } from 'react'
 import ArtScreenCard from './ArtScreenComponents/ArtScreenCard'
 import main_data from '../../../data/main_data.json'
 import SearchBar from '../HomeScreen/HomeScreenComponents/SearchBarComponent'
-const ArtScreen = () => {
 
-  const renderActivity = ({item} : any) => <ArtScreenCard activity={item} />
+const ArtScreen = ({navigation}: any) => {
+
+
+  const renderActivity = ({item} : any) => <ArtScreenCard activity={item} function={() => navigation.navigate('ArtDetailScreen')} />
   const artData = main_data.filter(item => item.category === 'Art');
 
  
@@ -30,9 +32,8 @@ const ArtScreen = () => {
   return (
     
     <SafeAreaView style={{flex:1}}>
-     
-     <SearchBar onSearch={handleSearch} />
 
+     <SearchBar onSearch={handleSearch} /> 
       
      <FlatList
 

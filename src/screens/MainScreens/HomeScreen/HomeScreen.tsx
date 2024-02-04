@@ -4,7 +4,7 @@ import SearchBar from './HomeScreenComponents/SearchBarComponent'
 import MainCard from './HomeScreenComponents/MainCardComponent'
 import main_data from '../../../data/main_data.json'
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation} : any) => {
 
   const renderActivity = ({item} : any) => <MainCard activity={item} />
 

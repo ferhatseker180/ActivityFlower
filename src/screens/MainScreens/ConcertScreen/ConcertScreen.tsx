@@ -4,9 +4,9 @@ import ConcertCard from './ConcertScreenComponents/ConcertCard'
 import main_data from '../../../data/main_data.json'
 import SearchBar from '../HomeScreen/HomeScreenComponents/SearchBarComponent/SearchBar'
 
-const ConcertScreen = () => {
+const ConcertScreen = ({navigation} : any) => {
 
-  const renderActivity = ({item} : any) => <ConcertCard activity={item} />
+  const renderActivity = ({item} : any) => <ConcertCard activity={item} function={() => navigation.navigate('ConcertDetailScreen')} />
   const concertData = main_data.filter(item => item.category === 'Concert');
 
  

@@ -4,9 +4,9 @@ import TheaterCard from './TheaterScreenComponents/TheaterCard'
 import main_data from '../../../data/main_data.json'
 import SearchBar from '../HomeScreen/HomeScreenComponents/SearchBarComponent/SearchBar'
 
-const TheaterScreen = () => {
+const TheaterScreen = ({navigation} : any) => {
 
-  const renderActivity = ({item} : any) => <TheaterCard activity={item} />
+  const renderActivity = ({item} : any) => <TheaterCard activity={item} function={() => navigation.navigate('TheaterDetailScreen')} />
   const theaterData = main_data.filter(item => item.category === 'Theater');
 
  
