@@ -9,10 +9,10 @@ import TheaterScreen from './src/screens/MainScreens/TheaterScreen/TheaterScreen
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Icon2 from 'react-native-vector-icons/FontAwesome5';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import TheaterDetailScreen from './src/screens/MainScreens/TheaterScreen/TheaterDetailScreen';
-import ArtDetailScreen from './src/screens/MainScreens/ArtScreen/ArtDetailScreen';
-import ConcertDetailScreen from './src/screens/MainScreens/ConcertScreen/ConcertDetailScreen';
-import HomeDetailScreen from './src/screens/MainScreens/HomeScreen/HomeDetailScreen';
+import TheaterDetailScreen from './src/screens/DetailScreens/TheaterDetailScreens/TheaterDetailScreen';
+import ArtDetailScreen from './src/screens/DetailScreens/ArtDetailScreens/ArtDetailScreen';
+import ConcertDetailScreen from './src/screens/DetailScreens/ConcertDetailScreens/ConcertDetailScreen';
+import HomeDetailScreen from './src/screens/DetailScreens/HomeDetailScreens/HomeDetailScreen';
 
 const Tab = createMaterialBottomTabNavigator();
 const Stack = createNativeStackNavigator();
