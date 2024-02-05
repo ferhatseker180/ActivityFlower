@@ -74,8 +74,8 @@ const TheaterDetailScreen = ({route} : any) => {
           initialRegion={{
             latitude: lat, // Örnek bir enlem
             longitude: long, // Örnek bir boylam
-            latitudeDelta: 0.001,
-            longitudeDelta: 0.001,
+            latitudeDelta: 0.005,
+            longitudeDelta: 0.005,
           }}
         >
           <Marker

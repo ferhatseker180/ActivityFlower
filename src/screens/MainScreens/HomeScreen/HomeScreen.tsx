@@ -14,10 +14,11 @@ const HomeScreen = ({navigation} : any) => {
     const filteredList = main_data.filter(data => {
       const searchedText = text.toLowerCase();
       const currentName = data.name.toLowerCase();
-
       const currentCategory = data.category.toLowerCase();
+      const currentLocation = data.location.toLowerCase();
 
-     return currentName.indexOf(searchedText) > - 1 || currentCategory.indexOf(searchedText)>-1;
+      return currentName.indexOf(searchedText) > - 1 || currentLocation.indexOf(searchedText) > -1 && currentCategory.indexOf(searchedText)>-1 ;
+      
     });
 
     setList(filteredList);
