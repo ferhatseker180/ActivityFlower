@@ -1,13 +1,22 @@
 import { View, Text, Image, TouchableOpacity } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './TheaterCardStyle'
 import Icon from 'react-native-vector-icons/FontAwesome5';
 
 const TheaterCard = (props : any) => {
+
+  const [imageError, setImageError] = useState(false);
+
+  const handleImageError = () => {
+    setImageError(true);
+  };
+
   return (
     <View style={styles.mainContainer}>
  
-    <Image style={styles.imageStyle} source={{uri: props.activity.image}} />
+    <Image style={[styles.imageStyle, imageError && styles.errorImage]} 
+    source={imageError ? require('../../../../data/images/theater.jpg') : { uri: props.activity.image }}
+    onError={handleImageError}/>
 
     <View style={{flex: 1, flexDirection: 'row', justifyContent: 'center'}}>
      

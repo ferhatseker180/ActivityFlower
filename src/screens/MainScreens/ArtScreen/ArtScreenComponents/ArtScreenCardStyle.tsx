@@ -23,6 +23,13 @@ export default StyleSheet.create({
         borderColor:'white'
     },
 
+    errorImage: {
+        width: Dimensions.get('window').height / 5, // Uygun bir boyut belirleyin
+        height: Dimensions.get('window').height / 5, // Uygun bir boyut belirleyin
+        resizeMode: 'contain',
+        borderColor: 'white',  
+      },
+
     nameStyle : {
         fontSize : 18,
         fontWeight : 'bold',

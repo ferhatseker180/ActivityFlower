@@ -19,10 +19,17 @@ export default StyleSheet.create({
         height : Dimensions.get('window').height / 5,
         borderWidth : 1,
         borderRadius : 10,
-        resizeMode : 'cover',
+        resizeMode : 'contain',
         borderColor:'white'
     },
 
+    errorImage: {
+        width: Dimensions.get('window').height / 5, // Uygun bir boyut belirleyin
+        height: Dimensions.get('window').height / 5, // Uygun bir boyut belirleyin
+        resizeMode: 'contain',
+        borderColor: 'white',  
+      },
+   
     nameStyle : {
         fontSize : 18,
         fontWeight : 'bold',

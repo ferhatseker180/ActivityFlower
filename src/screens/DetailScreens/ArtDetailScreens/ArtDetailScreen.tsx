@@ -24,6 +24,7 @@ const ArtDetailScreen = ({route}: any) => {
     long
   } = art;
 
+  const defaultImage = require('../../../data/images/art.png'); // Varsayılan görsel dosya yolunu ekleyin
 
 
   return (
@@ -31,9 +32,9 @@ const ArtDetailScreen = ({route}: any) => {
     <ScrollView style={styles.container}>
       <View style={styles.imageContainer}>
         <ScrollView horizontal={true}>
-          <Image style={styles.image} source={{uri: image}} />
-          <Image style={styles.image} source={{uri: image2}} />
-          <Image style={styles.image} source={{uri: image3}} />
+          <Image style={styles.image} source={(image ? { uri: image } : defaultImage)} />
+          <Image style={styles.image} source={(image2 ? { uri: image2 } : defaultImage)} />
+          <Image style={styles.image} source={(image3 ? { uri: image3 } : defaultImage)} />
         </ScrollView>
       </View>
 
