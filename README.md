@@ -5,17 +5,8 @@
 
 
 <img src="https://raw.githubusercontent.com/ferhatseker180/FollowTheFunApp/main/anasayfa.png" alt="anasayfa" width="320">
- ---
- ---
- ---
-![Theater Screen](https://raw.githubusercontent.com/ferhatseker180/FollowTheFunApp/main/tiyatro.png)
----
----
----
-![Konser Screen](https://raw.githubusercontent.com/ferhatseker180/FollowTheFunApp/main/konser.png)
----
----
----
-![Detail Screen](https://raw.githubusercontent.com/ferhatseker180/FollowTheFunApp/main/detay-sayfas%C4%B1.png)
+<img src="https://raw.githubusercontent.com/ferhatseker180/FollowTheFunApp/main/tiyatro.png" alt="theaterScreen" width="320">
+<img src="https://raw.githubusercontent.com/ferhatseker180/FollowTheFunApp/main/konser.png" alt="concertScreen" width="320">
+<img src="https://raw.githubusercontent.com/ferhatseker180/FollowTheFunApp/main/detay-sayfas%C4%B1.png" alt="detailScreen" width="320">
 
 
