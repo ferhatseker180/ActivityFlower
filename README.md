@@ -5,9 +5,15 @@
 
 ![Main Screen](https://raw.githubusercontent.com/ferhatseker180/FollowTheFunApp/main/anasayfa.png)
  ---
+ ---
+ ---
 ![Theater Screen](https://raw.githubusercontent.com/ferhatseker180/FollowTheFunApp/main/tiyatro.png)
 ---
+---
+---
 ![Konser Screen](https://raw.githubusercontent.com/ferhatseker180/FollowTheFunApp/main/konser.png)
+---
+---
 ---
 ![Detail Screen](https://raw.githubusercontent.com/ferhatseker180/FollowTheFunApp/main/detay-sayfas%C4%B1.png)
 
