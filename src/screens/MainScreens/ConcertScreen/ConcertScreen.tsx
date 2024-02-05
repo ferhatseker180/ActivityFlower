@@ -6,7 +6,7 @@ import SearchBar from '../HomeScreen/HomeScreenComponents/SearchBarComponent/Sea
 
 const ConcertScreen = ({navigation} : any) => {
 
-  const renderActivity = ({item} : any) => <ConcertCard activity={item} function={() => navigation.navigate('ConcertDetailScreen')} />
+  const renderActivity = ({item} : any) => <ConcertCard activity={item} function={() => navigation.navigate('ConcertDetailScreen',{concert : item})} />
   const concertData = main_data.filter(item => item.category === 'Concert');
 
  

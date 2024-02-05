@@ -1,10 +1,11 @@
 import { View, Text, ScrollView, Image } from 'react-native'
 import React from 'react'
+import styles from './HomeDetailScreenComponent/HomeDetailScreenStyle'
 import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
-import styles from './ConcertDetailScreenCompenent/ConcertDetailScreenStyle';
 
-const ConcertDetailScreen = ({route} : any) => {
-  const {concert} = route.params;
+const HomeDetailScreen = ({route} : any) => {
+
+    const {home} = route.params;
   const {
     name,
     image,
@@ -20,10 +21,11 @@ const ConcertDetailScreen = ({route} : any) => {
     price,
     lat,
     long
-  } = concert;
+  } = home;
+
 
   return (
-
+    
     <ScrollView style={styles.container}>
       <View style={styles.imageContainer}>
         <ScrollView horizontal={true}>
@@ -86,8 +88,8 @@ const ConcertDetailScreen = ({route} : any) => {
         </MapView>
 
     </ScrollView>
-    
+
   )
 }
 
-export default ConcertDetailScreen
+export default HomeDetailScreen

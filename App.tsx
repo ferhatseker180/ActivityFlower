@@ -12,6 +12,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import TheaterDetailScreen from './src/screens/MainScreens/TheaterScreen/TheaterDetailScreen';
 import ArtDetailScreen from './src/screens/MainScreens/ArtScreen/ArtDetailScreen';
 import ConcertDetailScreen from './src/screens/MainScreens/ConcertScreen/ConcertDetailScreen';
+import HomeDetailScreen from './src/screens/MainScreens/HomeScreen/HomeDetailScreen';
 
 const Tab = createMaterialBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -67,7 +68,12 @@ const App = () => {
   return (
 
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Art' >
+      <Stack.Navigator initialRouteName='Art'  
+      screenOptions={
+    {
+      headerShown: false
+    }
+  } >
         <Stack.Screen name="HomeScreen" component={TabNav} />
         <Stack.Screen name="ArtScreen" component={ArtScreen} />
         <Stack.Screen name="ConcertScreen" component={ConcertScreen} />
@@ -75,6 +81,7 @@ const App = () => {
         <Stack.Screen name="TheaterDetailScreen" component={TheaterDetailScreen} />
         <Stack.Screen name="ArtDetailScreen" component={ArtDetailScreen} />
         <Stack.Screen name="ConcertDetailScreen" component={ConcertDetailScreen} />
+        <Stack.Screen name="HomeDetailScreen" component={HomeDetailScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

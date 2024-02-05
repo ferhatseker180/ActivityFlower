@@ -34,7 +34,7 @@ const MainCard = (props: any) => {
       </View>
 
       <TouchableOpacity style = {styles.detailButtonStyle}>
-            <Text style={styles.buttonTextStyle}> Go To Detail Page </Text>
+            <Text style={styles.buttonTextStyle} onPress={props.function}> Go To Detail Page </Text>
         </TouchableOpacity>
       
     </View>

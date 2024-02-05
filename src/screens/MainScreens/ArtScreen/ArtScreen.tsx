@@ -6,8 +6,7 @@ import SearchBar from '../HomeScreen/HomeScreenComponents/SearchBarComponent'
 
 const ArtScreen = ({navigation}: any) => {
 
-
-  const renderActivity = ({item} : any) => <ArtScreenCard activity={item} function={() => navigation.navigate('ArtDetailScreen')} />
+  const renderActivity = ({item} : any) => <ArtScreenCard activity={item} function={() => navigation.navigate('ArtDetailScreen', {art: item})} />
   const artData = main_data.filter(item => item.category === 'Art');
 
  
