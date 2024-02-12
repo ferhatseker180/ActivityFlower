@@ -18,14 +18,12 @@ const TheaterScreen = ({navigation} : any) => {
   
   const renderSeperator = () => <View style = {{borderWidth:1,borderColor:'#e0e0e0'}} />
 
-  const handleSearch = (text : any) => {
-    const filteredList = main_data.filter(data => {
-      const searchedText = text.toLowerCase();
+  const handleSearch = (searchText: string) => {
+    const filteredList = main_data.filter((data) => {
       const currentName = data.name.toLowerCase();
+      const currentLocation = data.city.toLowerCase();
       const currentCategory = data.category.toLowerCase();
-      const currentLocation = data.location.toLowerCase();
-
-     return currentName.indexOf(searchedText) > - 1 || currentLocation.indexOf(searchedText) > -1 && currentCategory.indexOf(searchedText)>-1 ;
+      return currentName.includes(searchText.toLowerCase()) || currentLocation.includes(searchText.toLowerCase()) || currentCategory.includes(searchText.toLowerCase());
     });
 
     setList(filteredList.filter(item => item.category === 'Theater'));

@@ -27,9 +27,9 @@ const HomeScreen = ({navigation} : any) => {
       const searchedText = text.toLowerCase();
       const currentName = data.name.toLowerCase();
       const currentCategory = data.category.toLowerCase();
-      const currentLocation = data.location.toLowerCase();
+      const currentLocation = data.city.toLowerCase();
 
-      return currentName.indexOf(searchedText) > - 1 || currentLocation.indexOf(searchedText) > -1 && currentCategory.indexOf(searchedText)>-1 ;
+      return currentName.includes(text) || currentCategory.includes(text) || currentLocation.includes(text);
       
     });
 
