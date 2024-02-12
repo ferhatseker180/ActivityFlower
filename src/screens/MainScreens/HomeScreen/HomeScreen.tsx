@@ -3,11 +3,11 @@ import React, { useState } from 'react'
 import SearchBar from './HomeScreenComponents/SearchBarComponent'
 import MainCard from './HomeScreenComponents/MainCardComponent'
 import main_data from '../../../data/main_data.json'
+import moment from 'moment';
 
 const HomeScreen = ({navigation} : any) => {
 
-
-
+ 
   const renderActivity = ({item} : any) => <MainCard activity={item} function={() => navigation.navigate('HomeDetailScreen',{home : item})} />
 
   const renderSeperator = () => <View style = {{borderWidth:1,borderColor:'#e0e0e0'}} />

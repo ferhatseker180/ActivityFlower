@@ -13,6 +13,8 @@ import TheaterDetailScreen from './src/screens/DetailScreens/TheaterDetailScreen
 import ArtDetailScreen from './src/screens/DetailScreens/ArtDetailScreens/ArtDetailScreen';
 import ConcertDetailScreen from './src/screens/DetailScreens/ConcertDetailScreens/ConcertDetailScreen';
 import HomeDetailScreen from './src/screens/DetailScreens/HomeDetailScreens/HomeDetailScreen';
+import OutOfDateActivityScreen from './src/screens/MainScreens/OutOfDateScreen/OutOfDateActivityScreen';
+import OutOfDateDetailScreen from './src/screens/DetailScreens/OutOfDateDetailScreens/OutOfDateDetailScreen';
 
 const Tab = createMaterialBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -58,6 +60,16 @@ return(
             ),
           }}
         />
+
+        <Tab.Screen
+          name="OutOfDate"
+          component={OutOfDateActivityScreen}
+          options={{
+            tabBarIcon: ({color}) => (
+              <Icon name="history" size={22} color={color} />
+            ),
+          }} 
+          />
     
       </Tab.Navigator>
 
@@ -82,6 +94,8 @@ const App = () => {
         <Stack.Screen name="ArtDetailScreen" component={ArtDetailScreen} />
         <Stack.Screen name="ConcertDetailScreen" component={ConcertDetailScreen} />
         <Stack.Screen name="HomeDetailScreen" component={HomeDetailScreen} />
+        <Stack.Screen name="OutOfDateActivityScreen" component={OutOfDateActivityScreen} />
+        <Stack.Screen name="OutOfDateDetailScreen" component={OutOfDateDetailScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

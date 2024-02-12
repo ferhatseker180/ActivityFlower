@@ -1,10 +1,10 @@
 import {View, Text, Image, TouchableOpacity} from 'react-native';
 import React, { useState } from 'react';
-import styles from './MainCardStyle';
+import styles from './OutOfDateActivityCardStyle';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import moment from 'moment';
 
-const MainCard = (props: any) => {
+const OutOfDateActivityCard = (props: any) => {
 
   const [imageError, setImageError] = useState(false);
 
@@ -12,7 +12,7 @@ const MainCard = (props: any) => {
     setImageError(true);
   };
 
- 
+  
  
   return (
     <View style={styles.mainContainer}>
@@ -49,4 +49,4 @@ const MainCard = (props: any) => {
   );
 };
 
-export default MainCard;
+export default OutOfDateActivityCard;
