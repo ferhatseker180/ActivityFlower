@@ -1,9 +1,9 @@
-import { View, Text, ScrollView, Image } from 'react-native'
-import React from 'react'
-import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
+import {View, Text, ScrollView, Image} from 'react-native';
+import React from 'react';
+import MapView, {Marker, PROVIDER_GOOGLE} from 'react-native-maps';
 import styles from './ConcertDetailScreenCompenent/ConcertDetailScreenStyle';
 
-const ConcertDetailScreen = ({route} : any) => {
+const ConcertDetailScreen = ({route}: any) => {
   const {concert} = route.params;
   const {
     name,
@@ -19,11 +19,10 @@ const ConcertDetailScreen = ({route} : any) => {
     finishTime,
     price,
     lat,
-    long
+    long,
   } = concert;
 
   return (
-
     <ScrollView style={styles.container}>
       <View style={styles.imageContainer}>
         <ScrollView horizontal={true}>
@@ -63,31 +62,26 @@ const ConcertDetailScreen = ({route} : any) => {
           <Text style={styles.infoLabel}>Ticket Price:</Text>
           <Text style={styles.price}>{price}</Text>
         </View>
-        <Text style={styles.description}>
-         {description}
-        </Text>
+        <Text style={styles.description}>{description}</Text>
       </View>
 
       <MapView
-          style={styles.map}
-          provider={PROVIDER_GOOGLE}
-          initialRegion={{
-            latitude: lat, // Örnek bir enlem
-            longitude: long, // Örnek bir boylam
-            latitudeDelta: 0.001,
-            longitudeDelta: 0.001,
-          }}
-        >
-          <Marker
-            coordinate={{ latitude: lat, longitude: long }} // Örnek bir konum
-            title= {location}
-            description={location}
-          />
-        </MapView>
-
+        style={styles.map}
+        provider={PROVIDER_GOOGLE}
+        initialRegion={{
+          latitude: lat, 
+          longitude: long, 
+          latitudeDelta: 0.001,
+          longitudeDelta: 0.001,
+        }}>
+        <Marker
+          coordinate={{latitude: lat, longitude: long}}
+          title={location}
+          description={location}
+        />
+      </MapView>
     </ScrollView>
-    
-  )
-}
+  );
+};
 
-export default ConcertDetailScreen
+export default ConcertDetailScreen;

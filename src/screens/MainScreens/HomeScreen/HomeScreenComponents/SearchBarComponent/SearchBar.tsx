@@ -1,20 +1,18 @@
-import { View, Text, TextInput } from 'react-native'
-import React from 'react'
-import styles from './SearchBarStyle'
+import {View, Text, TextInput} from 'react-native';
+import React from 'react';
+import styles from './SearchBarStyle';
 
-const SearchBar = (props : any) => {
+const SearchBar = (props: any) => {
   return (
-    <View style = {styles.container}>
-      
+    <View style={styles.container}>
       <TextInput
-      placeholder='Search...' 
-      placeholderTextColor= 'black'
-      onChangeText={props.onSearch}
-      style={styles.text}
+        placeholder="Search..."
+        placeholderTextColor="black"
+        onChangeText={props.onSearch}
+        style={styles.text}
       />
-
     </View>
-  )
-}
+  );
+};
 
-export default SearchBar
+export default SearchBar;

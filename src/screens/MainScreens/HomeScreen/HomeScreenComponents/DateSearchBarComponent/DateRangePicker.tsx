@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { View, Text, Button, StyleSheet, Modal } from 'react-native';
+import React, {useState} from 'react';
+import {View, Text, Button, StyleSheet, Modal} from 'react-native';
 import DatePicker from 'react-native-date-picker';
 
-const DateSearch = ({ onDatesSelected } : any) => {
+const DateSearch = ({onDatesSelected}: any) => {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
   const [modalVisible, setModalVisible] = useState(false);
@@ -18,11 +18,11 @@ const DateSearch = ({ onDatesSelected } : any) => {
 
   const handleSearch = () => {
     onDatesSelected(startDate, endDate);
-    setModalVisible(false); // Filtreleme yapıldıktan sonra modal'ı kapat
+    setModalVisible(false); 
   };
 
   const handleCancel = () => {
-    setModalVisible(false); // İptal edildiğinde modal'ı kapat
+    setModalVisible(false); 
   };
 
   return (
@@ -32,8 +32,7 @@ const DateSearch = ({ onDatesSelected } : any) => {
         animationType="slide"
         transparent={true}
         visible={modalVisible}
-        onRequestClose={() => setModalVisible(false)}
-      >
+        onRequestClose={() => setModalVisible(false)}>
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
             <Text style={styles.label}>Başlangıç Tarihi:</Text>
@@ -42,8 +41,8 @@ const DateSearch = ({ onDatesSelected } : any) => {
               onDateChange={handleStartDateChange}
               mode="date"
               style={styles.datePicker}
-              minimumDate={today} // Bugünün tarihinden önceki tarihleri engelle
-              maximumDate={endDate} // Bitiş tarihinden sonraki tarihleri engelle
+              minimumDate={today} 
+              maximumDate={endDate} 
             />
             <Text style={styles.label}>Bitiş Tarihi:</Text>
             <DatePicker
@@ -51,8 +50,8 @@ const DateSearch = ({ onDatesSelected } : any) => {
               onDateChange={handleEndDateChange}
               mode="date"
               style={styles.datePicker}
-              minimumDate={startDate} // Başlangıç tarihinden önceki tarihleri engelle
-              maximumDate={new Date(2030, 0, 1)} // Gelecek tarihler için bir sınır belirle
+              minimumDate={startDate} 
+              maximumDate={new Date(2030, 0, 1)} 
             />
             <View style={styles.buttonContainer}>
               <Button title="Filtrele" onPress={handleSearch} />

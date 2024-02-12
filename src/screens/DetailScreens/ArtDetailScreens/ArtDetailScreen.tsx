@@ -4,7 +4,6 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import styles from './ArtDetailScreenComponent/ArtDetailScreenStyle';
 import MapView, {Marker, PROVIDER_GOOGLE} from 'react-native-maps';
 
-
 const ArtDetailScreen = ({route}: any) => {
   const {art} = route.params;
   const {
@@ -21,20 +20,27 @@ const ArtDetailScreen = ({route}: any) => {
     finishTime,
     price,
     lat,
-    long
+    long,
   } = art;
 
-  const defaultImage = require('../../../data/images/art.png'); // Varsayılan görsel dosya yolunu ekleyin
-
+  const defaultImage = require('../../../data/images/art.png'); 
 
   return (
-
     <ScrollView style={styles.container}>
       <View style={styles.imageContainer}>
         <ScrollView horizontal={true}>
-          <Image style={styles.image} source={(image ? { uri: image } : defaultImage)} />
-          <Image style={styles.image} source={(image2 ? { uri: image2 } : defaultImage)} />
-          <Image style={styles.image} source={(image3 ? { uri: image3 } : defaultImage)} />
+          <Image
+            style={styles.image}
+            source={image ? {uri: image} : defaultImage}
+          />
+          <Image
+            style={styles.image}
+            source={image2 ? {uri: image2} : defaultImage}
+          />
+          <Image
+            style={styles.image}
+            source={image3 ? {uri: image3} : defaultImage}
+          />
         </ScrollView>
       </View>
 
@@ -68,30 +74,25 @@ const ArtDetailScreen = ({route}: any) => {
           <Text style={styles.infoLabel}>Ticket Price:</Text>
           <Text style={styles.price}>{price}</Text>
         </View>
-        <Text style={styles.description}>
-         {description}
-        </Text>
+        <Text style={styles.description}>{description}</Text>
       </View>
 
       <MapView
-          style={styles.map}
-          provider={PROVIDER_GOOGLE}
-          initialRegion={{
-            latitude: lat, // Örnek bir enlem
-            longitude: long, // Örnek bir boylam
-            latitudeDelta: 0.001,
-            longitudeDelta: 0.001,
-          }}
-        >
-          <Marker
-            coordinate={{ latitude: lat, longitude: long }} // Örnek bir konum
-            title= {location}
-            description={location}
-          />
-        </MapView>
-
+        style={styles.map}
+        provider={PROVIDER_GOOGLE}
+        initialRegion={{
+          latitude: lat, //  enlem
+          longitude: long, // boylam
+          latitudeDelta: 0.001,
+          longitudeDelta: 0.001,
+        }}>
+        <Marker
+          coordinate={{latitude: lat, longitude: long}} 
+          title={location}
+          description={location}
+        />
+      </MapView>
     </ScrollView>
-
   );
 };
 

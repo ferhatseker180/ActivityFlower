@@ -1,10 +1,9 @@
-import { View, Text, Image, TouchableOpacity } from 'react-native'
-import React, { useState } from 'react'
-import styles from './TheaterCardStyle'
+import {View, Text, Image, TouchableOpacity} from 'react-native';
+import React, {useState} from 'react';
+import styles from './TheaterCardStyle';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 
-const TheaterCard = (props : any) => {
-
+const TheaterCard = (props: any) => {
   const [imageError, setImageError] = useState(false);
 
   const handleImageError = () => {
@@ -13,28 +12,31 @@ const TheaterCard = (props : any) => {
 
   return (
     <View style={styles.mainContainer}>
- 
-    <Image style={[styles.imageStyle, imageError && styles.errorImage]} 
-    source={imageError ? require('../../../../data/images/theater.jpg') : { uri: props.activity.image }}
-    onError={handleImageError}/>
+      <Image
+        style={[styles.imageStyle, imageError && styles.errorImage]}
+        source={
+          imageError
+            ? require('../../../../data/images/theater.jpg')
+            : {uri: props.activity.image}
+        }
+        onError={handleImageError}
+      />
 
-    <View style={{flex: 1, flexDirection: 'row', justifyContent: 'center'}}>
-     
-      {
-         props.activity.category === 'Theater' && (
-          <Icon name='theater-masks' size={20} />
-          )
-      }
-      <Text style={styles.nameStyle}> {props.activity.name} </Text>  
+      <View style={{flex: 1, flexDirection: 'row', justifyContent: 'center'}}>
+        {props.activity.category === 'Theater' && (
+          <Icon name="theater-masks" size={20} />
+        )}
+        <Text style={styles.nameStyle}> {props.activity.name} </Text>
+      </View>
 
-    </View>
-
-    <TouchableOpacity style = {styles.detailButtonStyle}>
-          <Text style={styles.buttonTextStyle} onPress={props.function}> Go To Detail Page </Text>
+      <TouchableOpacity style={styles.detailButtonStyle}>
+        <Text style={styles.buttonTextStyle} onPress={props.function}>
+          {' '}
+          Go To Detail Page{' '}
+        </Text>
       </TouchableOpacity>
-    
-  </View>
-  )
-}
+    </View>
+  );
+};
 
-export default TheaterCard
+export default TheaterCard;
