@@ -62,7 +62,7 @@ return(
         />
 
         <Tab.Screen
-          name="OutOfDate"
+          name="Out Of Date"
           component={OutOfDateActivityScreen}
           options={{
             tabBarIcon: ({color}) => (

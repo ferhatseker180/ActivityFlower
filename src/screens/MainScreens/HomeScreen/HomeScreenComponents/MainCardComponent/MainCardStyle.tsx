@@ -1,5 +1,8 @@
 import { Dimensions, StyleSheet } from "react-native";
 
+const windowWidth = Dimensions.get('window').width;
+const cardWidth = (windowWidth - 24) / 2;
+
 export default StyleSheet.create({
   
     mainContainer : {
@@ -15,20 +18,21 @@ export default StyleSheet.create({
     },
 
     imageStyle : {
-        height : Dimensions.get('window').height / 5,
+        width: '100%',
+        height : cardWidth * 1.5,
         borderWidth : 1,
         borderRadius : 10,
-        resizeMode : 'contain',
+        resizeMode : 'cover',
         borderColor:'white'
     },
 
     errorImage: {
-        width: Dimensions.get('window').height / 5, // Uygun bir boyut belirleyin
-        height: Dimensions.get('window').height / 5, // Uygun bir boyut belirleyin
-        resizeMode: 'contain',
+        width: '100%', // Uygun bir boyut belirleyin
+        height: cardWidth * 1.5, // Uygun bir boyut belirleyin
+        resizeMode: 'cover',
         borderColor: 'white',  
       },
-   
+
     nameStyle : {
         fontSize : 18,
         fontWeight : 'bold',
@@ -46,10 +50,10 @@ export default StyleSheet.create({
     detailButtonStyle : {
         backgroundColor: 'brown',
         height:40,
-        borderRadius: 10,
+        borderRadius: 15,
         alignItems: 'center',
         justifyContent: 'center',
+        
     
     },
-
 })
