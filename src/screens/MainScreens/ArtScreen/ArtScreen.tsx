@@ -3,13 +3,18 @@ import React, { useState } from 'react'
 import ArtScreenCard from './ArtScreenComponents/ArtScreenCard'
 import main_data from '../../../data/main_data.json'
 import SearchBar from '../HomeScreen/HomeScreenComponents/SearchBarComponent'
+import moment from 'moment'
 
 const ArtScreen = ({navigation}: any) => {
 
-  const renderActivity = ({item} : any) => <ArtScreenCard activity={item} function={() => navigation.navigate('ArtDetailScreen', {art: item})} />
-
   const [list,setList] = useState(main_data.filter(item => item.category === 'Art'));
+
+  const filterUpcomingActivities = (activities : any) => {
+    const currentDate = moment();
+    return activities.filter((activity : any) => moment(activity.date, 'DD-MM-YYYY').isSameOrAfter(currentDate, 'day'));
+  };
  
+  const renderActivity = ({item} : any) => <ArtScreenCard activity={item} function={() => navigation.navigate('ArtDetailScreen', {art: item})} />
   
   const renderSeperator = () => <View style = {{borderWidth:1,borderColor:'#e0e0e0'}} />
 
@@ -28,6 +33,7 @@ const ArtScreen = ({navigation}: any) => {
     setList(filteredList.filter(item => item.category === 'Art'));
   }
 
+  const upcomingActivities = filterUpcomingActivities(list);
 
   return (
     
@@ -39,7 +45,7 @@ const ArtScreen = ({navigation}: any) => {
 
      keyExtractor={(item) => item.id.toString()}
      renderItem={renderActivity}
-     data={list}
+     data={upcomingActivities}
      numColumns={2}
      ItemSeparatorComponent={renderSeperator}
     

@@ -7,6 +7,12 @@ import moment from 'moment';
 
 const HomeScreen = ({navigation} : any) => {
 
+  const [list,setList] = useState(main_data);
+
+  const filterUpcomingActivities = (activities : any) => {
+    const currentDate = moment();
+    return activities.filter((activity : any) => moment(activity.date, 'DD-MM-YYYY').isSameOrAfter(currentDate, 'day'));
+  };
  
   const renderActivity = ({item} : any) => <MainCard activity={item} function={() => navigation.navigate('HomeDetailScreen',{home : item})} />
 
@@ -26,7 +32,7 @@ const HomeScreen = ({navigation} : any) => {
     setList(filteredList);
   }
 
-  const [list,setList] = useState(main_data);
+  const upcomingActivities = filterUpcomingActivities(list);
 
   return (
     <SafeAreaView style={{flex:1}}>
@@ -38,7 +44,7 @@ const HomeScreen = ({navigation} : any) => {
 
      keyExtractor={(item) => item.id.toString()}
      renderItem={renderActivity}
-     data={list}
+     data={upcomingActivities}
      numColumns={2}
      ItemSeparatorComponent={renderSeperator}
     
