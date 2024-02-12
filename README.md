@@ -4,9 +4,10 @@
 
 
 
-<img src="https://raw.githubusercontent.com/ferhatseker180/FollowTheFunApp/main/anasayfa.png" alt="anasayfa" width="300"> 
-<img src="https://raw.githubusercontent.com/ferhatseker180/FollowTheFunApp/main/tiyatro.png" alt="theaterScreen" width="300">
-<img src="https://raw.githubusercontent.com/ferhatseker180/FollowTheFunApp/main/konser.png" alt="concertScreen" width="300">
+<img src="https://raw.githubusercontent.com/ferhatseker180/FollowTheFunApp/main/home.png" alt="anasayfa" width="300"> 
+<img src="https://raw.githubusercontent.com/ferhatseker180/FollowTheFunApp/main/concert.png" alt="concertScreen" width="300">
+<img src="https://github.com/ferhatseker180/FollowTheFunApp/blob/main/theater.png" alt="theaterScreen" width="300">
+<img src="https://raw.githubusercontent.com/ferhatseker180/FollowTheFunApp/main/outofdate.png" alt="outOfDateScreen" width="300">
 <img src="https://raw.githubusercontent.com/ferhatseker180/FollowTheFunApp/main/detay-sayfas%C4%B1.png" alt="detailScreen" width="300">
 
 
